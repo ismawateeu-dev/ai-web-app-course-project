@@ -1,15 +1,17 @@
 type FeatureCardProps = {
- title: string;
- description: string;
+    title: string;
+    description: string;
 };
 export function FeatureCard({
- title,
- description
+    title,
+    description
 }: FeatureCardProps) {
- return (
- <section>
+    return (
+ <section className="ux-card ux-feature">
  <h2>{title}</h2>
- <p>{description}</p>
+ <p className="ux-muted">
+ {description}
+ </p>
  </section>
  );
 }
